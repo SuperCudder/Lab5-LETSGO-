@@ -1,6 +1,7 @@
 public abstract class BinarySearchTree<Integer> {
 	int size;
 	Node root;
+
 	class Node {
 
 		public Node(int data) {
@@ -12,8 +13,7 @@ public abstract class BinarySearchTree<Integer> {
 		Node right;
 		Node left;
 		int data;
-		
-		
+
 	}
 
 	public abstract boolean add(int data);
