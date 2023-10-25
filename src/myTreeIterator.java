@@ -34,7 +34,7 @@ public class myTreeIterator implements ITreeIterator{
 	 * buildSequence() - Helper method of Sequence Array
 	 * @param node - Current local root
 	 */
-	private void buildSequence(BinarySearchTree.Node node) {
+	private void buildSequence(BinarySearchTree<Integer>.Node node) {
 		if (node==null)
 			return;
 		buildSequence(node.left);
