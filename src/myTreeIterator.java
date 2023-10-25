@@ -1,3 +1,4 @@
+
 /**
  * myTreeIterator - 
  * @author Nathaniel Serrano
@@ -9,7 +10,7 @@ public class myTreeIterator implements ITreeIterator{
 	private int sequenceArray[];
 	private int nextIndex;
 	
-	public myTreeIterator(BinarySearchTree bst) {
+	public myTreeIterator(BinarySearchTree<Integer> bst) {
 		sequenceArray = new int[bst.size];
 		nextIndex = 0;
 		SequenceArray(bst);
@@ -17,7 +18,7 @@ public class myTreeIterator implements ITreeIterator{
 	}
 
 	
-	public int[] SequenceArray(BinarySearchTree bst) {
+	public int[] SequenceArray(BinarySearchTree<Integer> bst) {
 		return buildSequence(bst.root);
 	}
 	
