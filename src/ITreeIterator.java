@@ -1,4 +1,6 @@
 
-public class ITreeIterator {
+public interface ITreeIterator {
 
+	public int[] SequenceArray(BinarySearchTree<Integer> bst);
+	
 }
