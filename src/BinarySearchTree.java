@@ -1,13 +1,18 @@
 public abstract class BinarySearchTree<Integer> {
+	int size;
+	Node root;
 
 	class Node {
 
-		public Node() {
-			root = null;
+		public Node(int data) {
+			right = null;
+			left = null;
+			this.data = data;
 		}
 
-		int size;
-		Node root;
+		Node right;
+		Node left;
+		int data;
 
 	}
 
