@@ -19,14 +19,15 @@ public class myTreeIterator implements ITreeIterator{
 
 	
 	public int[] SequenceArray(BinarySearchTree<Integer> bst) {
-		return buildSequence(bst.root);
+		buildSequence(bst.root);
+		return sequenceArray;
 	}
 	
-	private int[] buildSequence(Node node) {
+	private void buildSequence(BinarySearchTree.Node node) {
 		if (node==null)
-			return sequenceArray;
+			return;
 		buildSequence(node.left);
-		sequenceArray[nextIndex++] = node;
+		sequenceArray[nextIndex++] = node.data;
 		buildSequence(node.right);
 		
 	}
