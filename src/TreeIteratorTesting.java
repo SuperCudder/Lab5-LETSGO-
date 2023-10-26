@@ -1,9 +1,11 @@
+
 //joseph Rumery 
+
 public class TreeIteratorTesting {
 
 	int[] treeArray;
 	
-	public TreeIteratorTesting(BinarySearchTree<Integer> bst, ITreeIterator treeIter) {
+	public TreeIteratorTesting(MyBinarySearchTree bst, myTreeIterator treeIter) {
 
 		bst.add(2);
 		bst.add(1);
