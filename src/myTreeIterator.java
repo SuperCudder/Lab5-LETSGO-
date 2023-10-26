@@ -28,7 +28,7 @@ public class myTreeIterator implements ITreeIterator {
 	 * 
 	 * @param bst - A Binary Search Tree
 	 */
-	public int[] SequenceArray(BinarySearchTree<Integer> bst) {
+	public int[] SequenceArray(MyBinarySearchTree bst) {
 		sequenceArray = new int[bst.size];
 		nextIndex = 0;
 		buildSequence(bst.root);
@@ -40,7 +40,7 @@ public class myTreeIterator implements ITreeIterator {
 	 * 
 	 * @param node - Current local root
 	 */
-	private void buildSequence(BinarySearchTree<Integer>.Node node) {
+	private void buildSequence(MyBinarySearchTree.Node node) {
 		if (node == null)
 			return;
 		buildSequence(node.left);
