@@ -11,7 +11,7 @@ public class Lab5 {
 		// Tree Iterator testing object construction
 		TreeIteratorTesting testTreeIt = new TreeIteratorTesting(bst, treeIt);
 
-		System.out.println(testTreeIt.treeArray);
+		System.out.println(testTreeIt);
 
 	}
 }

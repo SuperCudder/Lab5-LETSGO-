@@ -2,7 +2,7 @@
 public class TreeIteratorTesting {
 
 	int[] treeArray;
-
+	
 	public TreeIteratorTesting(BinarySearchTree<Integer> bst, ITreeIterator treeIter) {
 
 		bst.add(2);
