@@ -10,7 +10,7 @@ public class TreeIteratorTesting {
 		bst.add(6);
 		bst.add(1);
 
-		int[] treeArray = new int[bst.getSize()];
+		treeArray = new int[bst.getSize()];
 
 		treeArray = treeIter.SequenceArray(bst);
 
