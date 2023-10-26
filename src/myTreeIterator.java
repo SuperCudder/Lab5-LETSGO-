@@ -16,7 +16,7 @@ public class myTreeIterator implements ITreeIterator {
 	 * 
 	 * @param bst - A Binary Search Tree.
 	 */
-	public myTreeIterator(BinarySearchTree<Integer> bst) {
+	public myTreeIterator(MyBinarySearchTree bst) {
 		sequenceArray = new int[bst.size];
 		nextIndex = 0;
 		SequenceArray(bst);
@@ -29,6 +29,8 @@ public class myTreeIterator implements ITreeIterator {
 	 * @param bst - A Binary Search Tree
 	 */
 	public int[] SequenceArray(BinarySearchTree<Integer> bst) {
+		sequenceArray = new int[bst.size];
+		nextIndex = 0;
 		buildSequence(bst.root);
 		return sequenceArray;
 	}
