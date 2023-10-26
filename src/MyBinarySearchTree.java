@@ -5,7 +5,7 @@
  * @author Vivek Reddy Bhimavarapu
  */
 
-public class MyBinarySearchTree extends BinarySearchTree<Object> {
+public class MyBinarySearchTree extends BinarySearchTree<Integer> {
 
     /**
      * Adds an element to the binary search tree.
