@@ -33,7 +33,7 @@ public class TreeIteratorTesting {
 
 		for (int i = 0; i < testarray.length; i++) {
 
-			if (testbst.root.data != this.treeArray[i]) {
+			if (testarray[i] != this.treeArray[i]) {
 
 				return false;
 
